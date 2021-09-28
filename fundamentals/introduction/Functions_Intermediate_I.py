@@ -50,13 +50,19 @@ dojo = {
 }
 
 def printInfo(dojo):
-    print("")
-print (f"{len(dojo['locations'])} LOCATIONS" )
-for i in range (0,len(dojo['locations'])):
-    print(f"{dojo['locations'][i]}")
-print("--------------------------------------------")
-print (f"{len(dojo['instructors'])} INSTRUCTORS")
-for i in range (0,len(dojo['instructors'])):
-        print (f"{dojo['instructors'][i]}" )
+    for i,j in dojo.items():
+        print(f"{len(j)} {i.upper()}")
+        for k in j:
+            print(k)
 printInfo(dojo)
 
+# def printInfo(dojo):
+#     print("")
+# print (f"{len(dojo['locations'])} LOCATIONS" )
+# for i in range (0,len(dojo['locations'])):
+#     print(f"{dojo['locations'][i]}")
+# print("--------------------------------------------")
+# print (f"{len(dojo['instructors'])} INSTRUCTORS")
+# for i in range (0,len(dojo['instructors'])):
+#         print (f"{dojo['instructors'][i]}" )
+# printInfo(dojo)
