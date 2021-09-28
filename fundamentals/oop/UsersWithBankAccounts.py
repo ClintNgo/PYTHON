@@ -53,8 +53,6 @@ class User:
         return self
 
 
-
-
 clint = BankAccount("Clint - checking", .05, 10000)
 kevin = BankAccount("Kevin", .035,30000)
 
