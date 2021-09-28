@@ -15,21 +15,21 @@
 # for i in "why hello there":
 #     print(i)
 
-# ironman = {
-#     "name":"Tony Stark",
-#     "bday":"5/29/1970",
-#     "weight":160,
-#     "powers":{
-#         "power1":"Genius",
-#         "power2":"Master Engineer"
-#     }
-# }
+ironman = {
+    "name":"Tony Stark",
+    "bday":"5/29/1970",
+    "weight":160,
+    "powers":{
+        "power1":"Genius",
+        "power2":"Master Engineer"
+    }
+}
 
 
 # ironman.append[3]("power3":"money")
 # for i in ironman:
 #     print(i,ironman[i])
-# print(ironman["powers"]["power1"])
+print(ironman["powers"]["power1"])
 # print(ironman)
 # print(ironman["name"])
 # ironman["age"] = 51
@@ -43,16 +43,16 @@ heroes= ("Iron Man", "Hulk", "Wonder Woman", "Thor")
 villians= ["Thanos","Joker", "Ultron", ["Marvel","DC"]]
 empty = []
 
-def say_hi(list):
-    for i in list:
-        if (type(i)==str):
-            print(f"Hi {i}")
+# def say_hi(list):
+#     for i in list:
+#         if (type(i)==str):
+#             print(f"Hi {i}")
 
-say_hi(heroes)
-say_hi(villians)
+# say_hi(heroes)
+# say_hi(villians)
 
-# for i in range(0,len(heroes)):
-#     print(i,heroes[i])
+for i in range(0,len(heroes)):
+    print(i,heroes[i])
 
 # for i in heroes:
 #     print(i)
