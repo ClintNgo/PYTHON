@@ -72,12 +72,12 @@ class Jedi(Trooper):
             print(f"{self.name} health cannot be healed above 200 | Current Health: {self.health}")
         return self
 
-        @staticmethod
-        def can_heal(future_health):
-            if future_health > 200:
-                return False
-            else:
-                return True
+    @staticmethod
+    def can_heal(future_health):
+        if future_health > 200:
+            return False
+        else:
+            return True
 
 class Sith(Jedi):
     def __init__(self,name,attack):

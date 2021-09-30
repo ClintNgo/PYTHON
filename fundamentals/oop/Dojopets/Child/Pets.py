@@ -1,5 +1,3 @@
-import Ninja
-
 class Pet():
     pets = []
     def __init__(self, name, type, tricks):
@@ -31,8 +29,3 @@ class Dog(Pet):
     def __init__(self, name, type, tricks):
         super().__init__(name, type, tricks)
 
-
-nikey = Dog("Nikey", "dog", "spin")
-clint = Ninja("Clint", "Ngo", "jerkey", 2)
-
-clint.walk(nikey).feed(nikey).bathe(nikey)
