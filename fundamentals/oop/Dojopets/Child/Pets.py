@@ -1,4 +1,4 @@
-class Pet():
+class Pets():
     pets = []
     def __init__(self, name, type, tricks):
         self.name = name 
@@ -25,7 +25,7 @@ class Pet():
         print(f"{self.name} whines")
         return self
 
-class Dog(Pet):
+class Dog(Pets):
     def __init__(self, name, type, tricks):
         super().__init__(name, type, tricks)
 
