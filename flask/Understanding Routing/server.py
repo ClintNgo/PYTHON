@@ -10,7 +10,7 @@ def ninja_page(ninja):
     print(ninja)
     return f"Hi! {ninja}"
 
-@app.route("/repeat/<number>/<word>")
+@app.route("/repeat/<int:number>/<word>")
 def repeat_page(number, word):
     word = word * int(number)
     return f"{word}"
