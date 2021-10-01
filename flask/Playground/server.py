@@ -19,6 +19,5 @@ def play2(num):
 def play3(num,color):
     return render_template("play.html",num=num, color=color)
     
-
 if __name__ == "__main__":
     app.run(debug=True)
