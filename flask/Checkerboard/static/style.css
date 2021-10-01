@@ -1,0 +1,36 @@
+
+h1{
+    display: flex;
+    width: 400px;
+    height: 60px;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+#title{
+    width: 1;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+}
+
+.square1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.square2{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+}
