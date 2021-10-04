@@ -1,14 +1,14 @@
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template,request,redirect,session
 app = Flask(__name__)
-app.secret_key = "Shhhhhhh..."
+app.secret_key = "shhhhhhhh"
 
 @app.route("/")
 def index():
     if "voters" not in session:
-        session["voter"] = []
-
-    if "voters" not in session:
-        session["votes"] = {"total":0,"Toy Story":0,"The Incredibles":0,"Finding Nemo":0,"Cars":0,"Luca":0,"Coco":0,"Wall-E":0,"A Bug's Life":0}
+        session["voters"] = []
+    
+    if "votes" not in session:
+        session["votes"] = {"total":0,"Toy Story":0,"The Incredibles":0, "Monsters Inc":0}
 
     return render_template("index.html")
 

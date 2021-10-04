@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Results!</title>
+
 </head>
 <body>
     <h1>The Results</h1>
@@ -26,50 +27,27 @@
             <td>{{session["votes"]["The Incredibles"]}}</td>
         </tr>
         <tr>
-            <td>Finding Nemo</td>
-            <td>{{session["votes"]["Finding Nemo"]}}</td>
-        </tr>
-        <tr>
-            <td>Cars</td>
-            <td>{{session["votes"]["Cars"]}}</td>
-        </tr>
-        <tr>
-            <td>Luca</td>
-            <td>{{session["votes"]["Luca"]}}</td>
-        </tr>
-        <tr>
-            <td>Coco</td>
-            <td>{{session["votes"]["Coco"]}}</td>
-        </tr>
-        <tr>
-            <td>Wall-E</td>
-            <td>{{session["votes"]["Wall-E"]}}</td>
-        </tr>
-        <tr>
-            <td>A Bug's Life</td>
-            <td>{{session["votes"]["A Bug's Life"]}}</td>
-        </tr>
-        <tr>
             <td>Total</td>
             <td>{{session["votes"]["total"]}}</td>
-        </tr>
+        </tr>       
     </table>
-    <h1>The Results</h1>
     <table width="400" border="1">
         <tr>
             <th>Name</th>
             <th>Age</th>
             <th>Movie</th>
         </tr>
-        {% for v in voters%}
+        {% for v in voters %}
         <tr>
-            <td>{{v["name"]}}</td>
+            <td>{{v.name}}</td>
             <td>{{v["age"]}}</td>
             <td>{{v["movie"]}}</td>
         </tr>
         {% endfor %}
     </table>
+    
     <br><br>
-    <a href="/">Vote Again!</a>
+    <a href="/">Vote Again!</a><br>
+    <a href="/clear">Clear Session</a>
 </body>
 </html>
