@@ -1,0 +1,25 @@
+INSERT INTO users (first_name, last_name, email)
+VALUES 
+("Bruce", "Wayne", "Batman@gmail.com"),
+("Barry", "Allan", "TheFlash@gmail.com"),
+("Clark", "Kent", "Superman@gmail.com")
+
+SELECT * FROM users
+
+SELECT * FROM users
+WHERE email LIKE 'batman%'
+
+SELECT * FROM users
+WHERE id = 3
+
+UPDATE users SET 
+last_name = 'Pancake'
+WHERE id = 3
+
+SET SQL_SAFE_UPDATES = 0;
+
+DELETE FROM users WHERE id = 2
+
+SELECT first_name 
+FROM users 
+ORDER BY first_name DESC;

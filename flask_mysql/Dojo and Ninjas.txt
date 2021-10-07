@@ -1,0 +1,36 @@
+INSERT INTO dojos (name)
+VALUES ("Chicago"),
+("Los Angeles"),
+("Kansas City")
+
+SET SQL_SAFE_UPDATES = 0;
+
+DELETE from dojos WHERE id <= 3
+
+SELECT * FROM dojos
+
+SELECT * FROM ninjas
+
+INSERT INTO ninjas (first_name,last_name, age, dojo_id)
+VALUES ("Steve","Rogers","125",4),
+("Nick","Fury","65",4),
+("Peter","Parker","18",4)
+
+INSERT INTO ninjas (first_name,last_name, age, dojo_id)
+VALUES ("Tony","Stark","55",5),
+("Bruce","Banner","49",5),
+("Natasha","Romanoff","40",5)
+
+INSERT INTO ninjas (first_name,last_name, age, dojo_id)
+VALUES ("Clint","Ngo","28",6),
+("Bruce","Wayne","45",6),
+("Barry","Allen","40",6)
+
+SELECT * FROM Ninjas
+WHERE dojo_id = 4
+
+SELECT * FROM Ninjas
+WHERE dojo_id = 6
+
+SELECT * FROM Ninjas
+WHERE ninjas.id = 27

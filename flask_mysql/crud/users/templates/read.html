@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" d-flex flex-column justify-content-center align-items-center table table-striped">
+        <h1>All Users</h1>
+        <table>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Created on</th>
+            </tr>
+            <div >
+                {% for user in users %}
+                <tr>
+                    <td >
+                        {{user.id}}
+                    </td>
+                    <td >
+                        {{user.first_name}} {{user.last_name}}
+                    </td>
+                    <td>
+                        {{user.email}}
+                    </td>
+                    <td>
+                        {{user.created_at}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </div>
+        </table>
+        <a href="/create">Add New User</a>
+    </div>
+</body>
+</html>
