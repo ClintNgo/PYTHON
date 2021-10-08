@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class=" d-flex flex-column justify-content-center align-items-center table table-striped">
+    <div class="d-flex flex-column justify-content-center align-items-center table table-striped">
         <h1>All Users</h1>
         <table>
             <tr>
@@ -16,6 +16,7 @@
                 <th scope="col">Full Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Created on</th>
+                <th scope="col">Actions</th>
             </tr>
             <div >
                 {% for user in users %}
@@ -31,6 +32,11 @@
                     </td>
                     <td>
                         {{user.created_at}}
+                    </td>
+                    <td>
+                        <a href="/user/{{user.id}}">Show</a>
+                        <a href="/edit/{{user.id}}">Edit</a>
+                        <a href="/delete/{{user.id}}">Delete</a>
                     </td>
                 </tr>
                 {% endfor %}

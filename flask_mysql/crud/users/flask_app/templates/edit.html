@@ -8,17 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class=" d-flex flex-column justify-content-center align-items-center table table-striped">
-        <h1>Add User</h1>
-        <form method="POST" action ="/create/user">
-            <h4>First Name</h4>
-            <input type="text" name="first_name" placeholder="First Name"><br><br>
-            <h4>Last Name</h4>
-            <input type="text" name="last_name" placeholder="Last Name"><br><br>
-            <h4>Email</h4>
-            <input type="text" name="email" placeholder="Email"><br><br>
-            <input type="submit" value="Submit"><br><br>
-        </form><br><br>    
+    <div class=" d-flex justify-content-center">
+        <a href="/">Home</a>
     </div>
+    <div class=" d-flex flex-column justify-content-center align-items-center table table-striped">
+        <h1>Edit User {{user.id}}</h1>
+        <form action ="/edituser/{{user.id}}" method = "POST">
+            <h4>First Name</h4>
+            <input type="text" name="first_name" value="{{first_name}}" placeholder="{{user.first_name}}"><br><br>
+            <h4>Last Name</h4>
+            <input type="text" name="last_name" value="{{last_name}}" placeholder="{{user.last_name}}"><br><br>
+            <h4>Email</h4>
+            <input type="text" name="email" value="{{email}}" placeholder="{{user.email}}"><br><br>
+            <input type="submit" value="Update"><br><br>
+        </form><br><br>
+        <a href="/user/{{user.id}}">Show User</a>    
+    </div>
+    
 </body>
 </html>

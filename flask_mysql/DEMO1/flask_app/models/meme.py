@@ -1,4 +1,4 @@
-from mysqlconnection import connectToMySQL
+from flask_app.config.mysqlconnection import connectToMySQL
 
 class Meme:
     def __init__(self,data):
@@ -18,10 +18,8 @@ class Meme:
         query = "SELECT * FROM memes ORDER BY id DESC"
         db_memes = connectToMySQL("memes_db").query_db(query)
         memes = []
-
         for m in db_memes:
             memes.append(Meme(m))
-
         return memes
 
     @classmethod
