@@ -8,13 +8,13 @@
     <title>Home page</title>
 </head>
 <body>
-    <div class="d-flex flex-column justify-content-center align-items-center table table-striped">
+    <div class="d-flex flex-row justify-content-center align-items-center container border border-dark p-3 mb-2 bg-light text-dark">
         <form method="POST" action="/create/dojo">
-            <h1>New Dojo</h1>
+            <h1>New Dojo</h1><br>
             <input type="text" name="name" placeholder="Enter Dojo Name"><br><br>
             <input type="submit" value="Create New Dojo"><br>
         </form>
-        <div>
+        <div  class="d-flex flex-column justify-content-center align-items-center container border border-5 w-25 p-3 p-3 mb-2 bg-light text-dark">
         <h1>All Dojo</h1>
         {% for dojo in dojos_ninjas %}
         <li>
@@ -23,8 +23,8 @@
             </a>
         </li>
         {% endfor %}       
-        </div>
         <a href="/addNinja">Add Ninja</a>
+        </div>
     </div>
 </body>
 </html>
